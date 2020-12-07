@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> website design </title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ad8ed2d936.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Styles/Index.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/all.css" type="text/css" media="all" />
+</head>
+<body>
+  <header class="header">
+    <div class="fixed">
+      <div class="logo">
+        <img src="Assets/sunset.png" alt=" logo" />
+      </div>
+      <div class="hamburger" id="hamburger" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <nav id="navlinks">
+
+      <div class="closenav" id="closeNav" onclick="closeNav()">
+        &times;
+      </div>
+      <ul>
+        <div class="delinks">
+          <li><a href="#" id="links"><i class="fa fa-home"> </i></a></li>
+        </div>
+        <div class="delinks">
+          <li><a href="#" id="links"><i class="fas fa-user"></i></a></li>
+        </div>
+        <div class="delinks">
+          <li><a href="#" id="links"><i class="fas fa-bug"></i></a></li>
+        </div>
+        <div class="delinks">
+          <li><a href="#" id="links"> <i class="fas fa-user-cog"></i></a></li>
+        </div>
+      </ul>
+      <div class=" profile">
+        <img src="Assets/avatar2.png" alt="" />
+        <h3> Ashe nkivita</h3>
+      </div>
+    </nav>
+  </header>
+  <div id="albums">
+    <div class="expos" id="expos">
+      <br /> <br /><br /><br />
+      <div class=" expand">
+        <button type="button" class="browse"> Albums</button>
+
+        <button type="button" class="see-all"> see all</button>
+      </div>
+    </div>
+    <div class="over-flow-img">
+      <div class="div1">
+        <button type="button" class="explore-button" onclick="openAlbum()"> Explore</button>
+      </div>
+      <div class="div2">
+        <button type="button" class="explore-button"> explore</button>
+      </div>
+      <div class="div3">
+        <button type="button" class="explore-button"> Explore</button>
+      </div>
+      <div class="div4">
+        <button type="button" class="explore-button"> Explore</button>
+      </div>
+      <div class="div5">
+        <button type="button" class="explore-button"> Explore</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="album1">
+    <div class="album1banner">
+      <div class="back-arrow">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="title">
+        <h2> love scans face</h2>
+        <h3> By Wizboy</h3>
+      </div>
+      <div class="playIcon" onclick="playAudio()">
+        <i class=" fas fa-play"></i>
+      </div>
+    </div>
+
+    <div class="songList">
+      <img src="Assets/coffee.jpg" alt="" class=" songImg" />
+
+      <div class="musicTitle">
+        <h4> Being anything else</h4> <br /> <h5> Quit</h5>
+      </div>
+      <span class="moreOptions"><i class="fas fa-ellipsis-v"></i> </span>
+      <audio src="songs/Maserati.mp3" id="music" type=" audio/mpeg">
+      </audio>
+    </div>
+    <hr />
+    <div class="songList">
+      <img src="Assets/board.jpg" alt="" class=" songImg" />
+
+      <div class="musicTitle">
+        <h4> super woman</h4> <br /> <h5> secural</h5>
+      </div>
+      <span class="moreOptions"><i class="fas fa-ellipsis-v"></i> </span>
+    </div>
+    <hr />
+  </div>
+
+  <div id="Gernes">
+    <div class="expand" id=" expand">
+      <button type="button" class="browse"> Gernes</button>
+
+      <button type="button" class="see-all"> see all</button>
+    </div>
+
+    <div class="over-flow-img" id=" over-flow-image">
+      <div class="div1">
+        <button type="button" class="explore-button" onclick="openAlbum()"> Explore</button>
+      </div>
+      <div class="div2">
+        <button type="button" class="explore-button"> explore</button>
+      </div>
+      <div class="div3">
+        <button type="button" class="explore-button"> Explore</button>
+      </div>
+      <div class="div4">
+        <button type="button" class="explore-button"> Explore</button>
+      </div>
+      <div class="div5">
+        <button type="button" class="explore-button"> Explore</button>
+      </div>
+    </div>
+  </div>
+  <!--<img src=" Assets/Marvin.jpg" alt="" />
+                                            <img src=" Assets/Bg.jpeg" alt="" />
+                                            ll
+                                            <img src=" Assets/Eliot.jpg" alt="" />-->
+  <script src="Js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
